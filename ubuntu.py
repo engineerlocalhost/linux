@@ -7,10 +7,11 @@ sudo passwd root #masukan password root
 apt update && apt upgrade -y
 
 #Installasi Apps pendukung
-1. apt install git #install git
-2. dpkg -i #install .*deb apps
-3. apt install golang-go #install golang
+apt install git #install git
+dpkg -i #install .*deb apps
+apt install golang-go #install golang
     go version #check golang versi
+install gnome-tweaks #tweaks gnome
 
 ================================================
 
@@ -23,3 +24,8 @@ cd Docker-CommunityServer
     docker-compose.workspace.yml for ONLYOFFICE Workspace Community Edition
     docker-compose.workspace_enterprise.yml for ONLYOFFICE Workspace Enterprise Edition
 docker compose -f docker-compose.workspace.yml up -d 
+
+email   : engineerlocalhost@gmail.com
+User    : Administrator
+Passwd  : Sayasaja007
+==================================================
