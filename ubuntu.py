@@ -310,3 +310,6 @@ git clone https://github.com/linuxopsys/ubuntu-to-kali-terminal.git
 cd ubuntu-to-kali-terminal
 tar -xvf color-schemes.tar
 tar -xvf kali-dark-theme.tar
+----------------
+chsh -s $(which zsh)
+chsh -s $(which zsh) hima #default pada zsh pada user hima
