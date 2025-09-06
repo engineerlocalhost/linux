@@ -25,7 +25,7 @@ cd Docker-CommunityServer
     docker-compose.workspace_enterprise.yml for ONLYOFFICE Workspace Enterprise Edition
 docker compose -f docker-compose.workspace.yml up -d 
 
-email   : engineerlocalhost@gmail.com
+email   : en
 User    : Administrator
-Passwd  : Sayasaja007
+Passwd  : Sayasaja007*******
 ==================================================
