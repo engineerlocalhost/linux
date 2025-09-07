@@ -49,6 +49,30 @@ docker restart onlyoffice-mysql-server
 #cek ulang
 docker exec -it onlyoffice-mysql-server mysql -u root -p
 SELECT @@GLOBAL.sql_mode;
+===========================================
+
+#setting onlyoffice-mail-server
+Buat App Password Gmail (bukan password utama!)
+Langkah membuat App Password:
+    Buka: https://myaccount.google.com/security
+| Field                | Value                                |
+| -------------------- | ------------------------------------ |
+| SMTP Server          | `smtp.gmail.com`                     |
+| Port                 | `587`                                |
+| Connection Security  | `STARTTLS`                           |
+| SMTP Authentication  | ✅ Yes                                |
+| Username             | `yourname@gmail.com`                 |
+| Password             | `abcd efgh ijkl mnop` (App Password) |
+| Sender Email Address | `yourname@gmail.com`                 |
+| Sender Display Name  | `OnlyOffice` atau nama kamu          |
+================================================================================================
+| Setting                   | Value                                                  |
+| ------------------------- | ------------------------------------------------------ |
+| **IMAP Server**           | `imap.gmail.com`                                       |
+| **Port**                  | `993`                                                  |
+| **Encryption (Security)** | `SSL/TLS`                                              |
+| **Username**              | Alamat email Gmail kamu (misal: `yourname@gmail.com`)  |
+| **Password**              | **App Password** dari Google, **bukan** password biasa |
 
 
 #Installing ZSH on Ubuntu
