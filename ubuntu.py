@@ -21,11 +21,8 @@ apt update
 apt install grub-customizer
 
 #install winbox using pip
-apt install "pip" #tanpa ""
-jika error "error: externally-managed-environment × This environment is externally managed ╰─> To install Python packages system-wide, try apt install python3-xyz, where xyz is the package you are trying to install."
-apt install python3.13-venv
-source venv/bin/activate
-pip install winbox
+apt instal snap
+snap install winbox
 ================================================
 
 #Installing ONLYOFFICE Workspace using Docker Compose
