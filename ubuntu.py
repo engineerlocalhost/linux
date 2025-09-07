@@ -14,6 +14,12 @@ apt install golang-go #install golang
 apt install gnome-tweak-tool
 /usr/share/themes #untuk thema
 /usr/share/icons #untuk icons
+
+#grub-customizer
+add-apt-repository ppa:danielrichter2007/grub-customizer
+apt update
+apt install grub-customizer
+
 ================================================
 
 #Installing ONLYOFFICE Workspace using Docker Compose
