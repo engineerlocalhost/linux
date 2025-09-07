@@ -39,6 +39,17 @@ email   : en
 User    : Administrator
 Passwd  : Sayasaja007*******
 ==================================================
+#Expression #1 of SELECT list is not in GROUP BY
+
+docker exec -it onlyoffice-mysql-server bash
+echo "[mysqld]
+sql_mode=STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION" > /etc/mysql/conf.d/disable_full_group_by.cnf
+exit
+docker restart onlyoffice-mysql-server
+#cek ulang
+docker exec -it onlyoffice-mysql-server mysql -u root -p
+SELECT @@GLOBAL.sql_mode;
+
 
 #Installing ZSH on Ubuntu
 apt install zsh
