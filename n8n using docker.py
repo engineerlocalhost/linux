@@ -20,7 +20,8 @@ Membuat File Konfigurasi n8n
 Buat file .env di dalam folder n8n-server:
 nano .env
 
-    #en8n Configuration N8N_BASIC_AUTH_ACTIVE=true
+    #en8n Configuration 
+    N8N_BASIC_AUTH_ACTIVE=true
     N8N_BASIC_AUTH_USER=Your-User
     N8N_BASIC_AUTH_PASSWORD=Your-Password
     N8N_HOST=Your-IP-Server
