@@ -35,9 +35,7 @@ cd Docker-CommunityServer
     docker-compose.workspace_enterprise.yml for ONLYOFFICE Workspace Enterprise Edition
 docker compose -f docker-compose.workspace.yml up -d 
 
-email   : en
-User    : Administrator
-Passwd  : Sayasaja007*******
+
 ==================================================
 #Expression #1 of SELECT list is not in GROUP BY
 
