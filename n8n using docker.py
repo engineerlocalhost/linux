@@ -30,11 +30,11 @@ nano .env
     N8N_SECURE_COOKIE=false  # Temporarily disable secure cookie to avoid HTTP access issues
     NODE_ENV=production
 
-    N8N_BASIC_AUTH_ACTIVE → aktifkan login basic auth
-     N8N_BASIC_AUTH_USER / PASSWORD → username & password login
-     N8N_HOST → IP server (misal: 192.168.1.100 atau domain)
-     N8N_PORT → port yang digunakan (default 5678)
-     N8N_SECURE_COOKIE → set false bila akses masih via HTTP
+     #N8N_BASIC_AUTH_ACTIVE → aktifkan login basic auth
+     #N8N_BASIC_AUTH_USER / PASSWORD → username & password login
+     #N8N_HOST → IP server (misal: 192.168.1.100 atau domain)
+     #N8N_PORT → port yang digunakan (default 5678)
+     #N8N_SECURE_COOKIE → set false bila akses masih via HTTP
 
 Membuat File docker-compose.yml
 Buat file docker-compose.yml di folder n8n-server:
@@ -45,9 +45,9 @@ nano docker-compose.yml
       n8n:
         image: n8nio/n8n
         restart: always
-        container_name: n8n-server  # Custom container name
+        container_name: n8n-server  # silahkan disesuaikan namanya
         ports:
-          - "5678:5678"
+          - "5678:5678" #sesuaikan port yang digunakan
         env_file:
           - .env
         volumes:
@@ -56,7 +56,7 @@ nano docker-compose.yml
 Menjalankan n8n dengan Docker
 Masih di dalam folder n8n-server, jalankan perintah:
 
-    docker-compose up -d
+    docker compose up -d
 
 Mengakses n8n
 
@@ -64,6 +64,6 @@ Buka browser lalu akses:
 
     http://Your-IP-Server:5678
 
- atau  jika mengakses secara local bisagunakan 
+atau  jika mengakses secara local bisagunakan 
 
     http://localhost:5678 
